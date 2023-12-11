@@ -97,6 +97,7 @@ app.get("/svr/employees", function (req, res) {
                 res.status(500).send(err);
             } else {
                 res.send(result);
+                console.log(result);
             }
         });
     }
